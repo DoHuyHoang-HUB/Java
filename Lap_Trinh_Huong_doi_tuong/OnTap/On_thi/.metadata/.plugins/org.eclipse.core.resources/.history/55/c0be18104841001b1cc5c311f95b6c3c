@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package baiThi;
+
+import java.util.List;
+
+/**
+ * @author DoHuyHoang
+ *
+ */
+public class DanhSachThe {
+	private List<TaiKhoanThe> ds;
+}

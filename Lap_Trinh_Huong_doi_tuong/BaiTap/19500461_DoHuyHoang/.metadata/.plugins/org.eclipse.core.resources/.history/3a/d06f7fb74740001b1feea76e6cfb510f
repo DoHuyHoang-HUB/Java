@@ -1,0 +1,28 @@
+/**
+ * 
+ */
+package baiTapOOP;
+
+/**
+ * @author Do-Huy-Hoang
+ *
+ */
+public class Test {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		DanhSach list = new DanhSach();
+		
+		list.them(new Sach("1", "Hello My friend", true, 100));
+		list.them(new Sach("2", "BOloBO", false, 1000));
+		list.them(new DiaCD("3", "HA HA...", false, 130));
+		list.them(new DiaCD("4", ":))))))", true, 190));
+		
+		System.out.println(list);
+		
+		list.Xoa("1");
+	}
+
+}

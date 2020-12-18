@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+package baiTapOOP;
+
+import java.util.List;
+
+/**
+ * @author Do-Huy-Hoang
+ *
+ */
+public class DanhSach {
+	private List<NhaXuatBan> listNhaXuatBan;
+	
+		
+}

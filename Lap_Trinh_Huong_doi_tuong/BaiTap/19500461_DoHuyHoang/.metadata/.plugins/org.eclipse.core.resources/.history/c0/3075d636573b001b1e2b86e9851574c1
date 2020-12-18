@@ -1,0 +1,31 @@
+/**
+ * 
+ */
+package bai08;
+
+import java.util.HashSet;
+import java.util.Set;
+
+/**
+ * @author Do-Huy-Hoang
+ *
+ */
+public class Test {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Faculty f1 = new Faculty("Le Kim", "Khanh", "111", "CNTT");
+		Set<Enrolment> list1 = new HashSet<Enrolment>();
+		list1.add(new Enrolment(new Student("Hoang", "Dung", "140211", 2014), "Dang hoc", "Nam 2", 8.5));
+		list1.add(new Enrolment(new Student("Tran", "Binh", "140511", 2014), "Dang hoc", "Nam 2", 9.5));
+		list1.add(new Enrolment(new Student("Le", "Huynh", "140811", 2014), "Dang hoc", "Nam 2", 7));
+		list1.add(new Enrolment(new Student("Ho", "Huyen", "140611", 2013), "Dang hoc", "Nam 3", 5.5));
+		Course list = new Course("OPP", "Lap trinh huong doi tuong", 4);
+		list.addSection("0602", "I (2015 - 2016)", "H5.01", f1, list1);
+		
+		System.out.println(list);
+	}
+
+}

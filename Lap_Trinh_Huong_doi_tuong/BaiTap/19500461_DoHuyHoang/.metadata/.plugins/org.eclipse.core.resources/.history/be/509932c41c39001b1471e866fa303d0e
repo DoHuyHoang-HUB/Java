@@ -1,0 +1,44 @@
+/**
+ * 
+ */
+package bai08;
+
+/**
+ * @author Do-Huy-Hoang
+ *
+ */
+public class Person {
+	private String lastName;
+	private String firstName;
+	
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	/**
+	 * @param lastName
+	 * @param firstName
+	 */
+	public Person(String lastName, String firstName) {
+		setFirstName(firstName);
+		setLastName(lastName);
+	}
+	public Person() {
+		
+	}
+	@Override
+	public String toString() {
+		return String.format("%-10s %-10s", firstName, lastName);
+	}
+	
+	
+	
+}

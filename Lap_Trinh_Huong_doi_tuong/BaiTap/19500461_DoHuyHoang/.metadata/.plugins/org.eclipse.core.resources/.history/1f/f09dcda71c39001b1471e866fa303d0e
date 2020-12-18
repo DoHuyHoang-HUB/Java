@@ -1,0 +1,40 @@
+/**
+ * 
+ */
+package bai08;
+
+/**
+ * @author Do-Huy-Hoang
+ *
+ */
+public class Student {
+	private String studentID;
+	private int yearMatriculated;
+	
+	public String getStudentID() {
+		return studentID;
+	}
+	public void setStudentID(String studentID) {
+		this.studentID = studentID;
+	}
+	public int getYearMatriculated() {
+		return yearMatriculated;
+	}
+	public void setYearMatriculated(int yearMatriculated) {
+		this.yearMatriculated = yearMatriculated;
+	}
+	/**
+	 * @param studentID
+	 * @param yearMatriculated
+	 */
+	public Student(String studentID, int yearMatriculated) {
+		setStudentID(studentID);
+		setYearMatriculated(yearMatriculated);
+	}
+	
+	public Student() {
+		
+	}
+	
+	public 
+}

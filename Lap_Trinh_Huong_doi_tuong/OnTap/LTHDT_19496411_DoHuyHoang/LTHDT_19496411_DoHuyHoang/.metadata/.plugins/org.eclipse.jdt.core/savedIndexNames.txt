@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+D:\Lap_Trinh_Huong_doi_tuong\LTHDT_19496411_DoHuyHoang\LTHDT_19496411_DoHuyHoang\.metadata\.plugins\org.eclipse.jdt.core
+3460880079.index
+3641337102.index

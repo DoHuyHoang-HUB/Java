@@ -1,0 +1,80 @@
+/**
+ * 
+ */
+package baiTapOOP;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * @author Do-Huy-Hoang
+ *
+ */
+public class DanhSach {
+	private List<NhaXuatBan> listNhaXuatBan;
+
+	/**
+	 * @param listNhaXuatBan
+	 */
+	public DanhSach() {
+		listNhaXuatBan = new ArrayList<NhaXuatBan>();
+	}
+	public boolean them(NhaXuatBan p) {
+		if(listNhaXuatBan.contains(p))
+			return false;
+		listNhaXuatBan.add(p);
+		return true;
+	}
+	@Override
+	public String toString() {
+		String s = "";
+		for (NhaXuatBan nhaXuatBan : listNhaXuatBan) {
+			s += nhaXuatBan + "\n";
+		}
+		return s;
+	}
+	
+	// Xoa an pham theo ma
+	public boolean Xoa(String ma) {
+		return listNhaXuatBan.removeIf(hh->hh.getMa() == ma);
+	}
+	// Sua an pham theo ma
+	public boolean suaSach(String ma, String tuaDeNew, boolean tinhTrangNew, int soTrangNew) {
+		for (NhaXuatBan nhaXuatBan : listNhaXuatBan) {
+			if(nhaXuatBan instanceof Sach) {
+				if(nhaXuatBan.getMa().equals(ma)) {
+					nhaXuatBan.setTuaDe(tuaDeNew);
+					nhaXuatBan.setTinhTrang(tinhTrangNew);
+					((Sach) nhaXuatBan).setSoTrang(soTrangNew);
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+	public boolean suaDiaCD(String ma, String tuaDeNew, boolean tinhTrangNew, int thoiGianNew) {
+		for (NhaXuatBan nhaXuatBan : listNhaXuatBan) {
+			if(nhaXuatBan instanceof DiaCD)
+				if(nhaXuatBan.getMa().equals(ma)) {
+					nhaXuatBan.setTinhTrang(tinhTrangNew);
+					nhaXuatBan.setTuaDe(tuaDeNew);
+					((DiaCD) nhaXuatBan).setThoiGian(thoiGianNew);
+					return true;
+				}
+		}
+		return false;
+	}
+	// Dem so luong an pham qua lon
+	public int demSoluongAnPhamQuaLon() {
+		int dem = 0;
+		for (NhaXuatBan nhaXuatBan : listNhaXuatBan) {
+			if(nhaXuatBan.getTheoDoiTinhTrang().equals("Qua lon"))
+				dem++;.equals("Qua lon")
+		}
+		return dem;
+	}
+	// Lay an pham khong hop phap
+	public DanhSach AnPham() {
+		
+	}
+}

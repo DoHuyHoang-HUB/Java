@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+package baiTapOOP;
+
+/**
+ * @author Do-Huy-Hoang
+ *
+ */
+public class Sach extends NhaXuatBan {
+	private int soTrang;
+
+	public int getSoTrang() {
+		return soTrang;
+	}
+
+	public void setSoTrang(int soTrang) {
+		this.soTrang = soTrang;
+	}
+	
+	
+}

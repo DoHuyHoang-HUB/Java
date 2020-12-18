@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package bai08;
+
+/**
+ * @author Do-Huy-Hoang
+ *
+ */
+public class Person {
+	private String lastName;
+	private String firstName;
+	
+}

@@ -1,0 +1,53 @@
+/**
+ * 
+ */
+package baiThi;
+
+import java.text.DecimalFormat;
+
+/**
+ * @author DoHuyHoang
+ *
+ */
+public class TheGhiNo extends TaiKhoanThe {
+	private double soDu;
+
+	/**
+	 * @return the soDu
+	 */
+	public double getSoDu() {
+		return soDu;
+	}
+
+	/**
+	 * @param soDu the soDu to set
+	 */
+	public void setSoDu(double soDu) {
+		this.soDu = soDu;
+	}
+
+	/**
+	 * @param maThe
+	 * @param chuSoHuu
+	 * @param soDu
+	 */
+	public TheGhiNo(int maThe, String chuSoHuu, double soDu) {
+		super(maThe, chuSoHuu);
+		setSoDu(soDu);
+	}
+	
+	@Override
+	public String getKhaNang() {
+		if(soDu >= 0)
+			return "Con";
+		return super.getKhaNang();
+	}
+
+	@Override
+	public String toString() {
+		DecimalFormat df = new DecimalFormat("#,##0");
+ 		return String.format("%s %-10s", super.toString(), df.format(soDu), getKhaNang());
+	}
+	
+	
+}

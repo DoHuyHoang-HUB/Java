@@ -1,0 +1,52 @@
+/**
+ * 
+ */
+package baiThi;
+
+import java.util.Scanner;
+
+/**
+ * @author DoHuyHoang
+ *
+ */
+public class Test {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		DanhSachThe list = new DanhSachThe();
+		
+		list.addThe(new TheGhiNo(1, "Do Huy Hoang", 100000));
+		list.addThe(new TheGhiNo(1, "Nguyen Hung", 1500000));
+		list.addThe(new TheTinDung(2, "Hoangpro", 10000000, 15000000));
+		list.addThe(new TheTinDung(3, "Hoanggapro", 10000000, 9000000));
+		list.addThe(new TheGhiNo(4, "Hoang vip pro", 60000));
+		list.addThe(new TheGhiNo(5, "Hoang sieu cap", 150000));
+		
+		System.out.println(list);
+		
+		System.out.print("Nhap ten can tim kiem: ");
+		String tenString = new Scanner(System.in).nextLine();
+		
+		System.out.println(list.timKienTheoTen(tenString));
+		
+		
+		System.out.print("Nhap ma the can sua: ");
+		int maThe = new Scanner(System.in).nextInt();
+		System.out.print("Sua han tin dung: ");
+		double mucTinDung = new Scanner(System.in).nextDouble();
+		if(list.suaKiemTheoMa(maThe, mucTinDung))
+			System.out.println("Sua thanh cong");
+		else {
+			System.out.println();
+		}
+		
+		System.out.println(list);
+		
+		
+		
+		
+	}
+
+}

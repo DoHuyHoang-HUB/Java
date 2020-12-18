@@ -1,3 +1,0 @@
-INDEX VERSION 1.131+E:\Java\Lap_Trinh_Huong_doi_tuong\OnTap\On_thi\.metadata\.plugins\org.eclipse.jdt.core
-1346343815.index
-3378701127.index
